@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/Input/Input.test.tsx">
+    <testCase name="Atoms renders input field" duration="130"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/Typography/Typography.test.tsx">
+    <testCase name="Renders typography" duration="107"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/molecules/Banner/Banner.test.tsx">
+    <testCase name="Molecules/Banner renders Banner component" duration="327"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/molecules/ExtendedNav/ExtendedNav.test.tsx">
+    <testCase name="Molecules/ExtendedNav are 18 labels rendering" duration="365"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/organisms/Header/Header.test.tsx">
+    <testCase name="Header tests Render header" duration="201"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/organisms/Tab/TabPanel.test.tsx">
+    <testCase name="Tab panel tests Render two tabs and call changeHandler" duration="288"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/Icons/Icons.test.tsx">
+    <testCase name="renders Icon" duration="45"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/Images/Image.test.tsx">
+    <testCase name="renders Image" duration="39"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/Logo/Logo.test.tsx">
+    <testCase name="Renders logo" duration="37"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/ProgressBar/ProgressBar.test.tsx">
+    <testCase name="renders progress bar" duration="53"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/Avatar/Avatar.test.tsx">
+    <testCase name="renders Avatar" duration="28"/>
+  </file>
+  <file path="/home/bhavS/Blinkist App/blinkist/src/App.test.tsx">
+    <testCase name="renders main App" duration="276"/>
+  </file>
+</testExecutions>
