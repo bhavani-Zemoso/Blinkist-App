@@ -23,7 +23,7 @@ describe('Header tests', () => {
 
         const explore = screen.getByTestId('exploreButton');
 
-        fireEvent.click(explore); 
-        expect(handleClick).toHaveBeenCalledTimes(2);
+        fireEvent.click(explore);
+        expect(handleClick).toHaveBeenCalledTimes(0);
     })
 })

@@ -12,7 +12,7 @@ type NoOfReadsProps = {
 export const NoOfReads = (props: NoOfReadsProps) => {
     const {style, text} = props;
     return(
-        <Grid container style={style}>
+        <Grid container style={style} data-testid="NoOfReads">
             <Grid item>
                 <IconComponent url={userIcon} style={{width: '13.33px', height: '17.5px', marginRight: theme.spacing(0), color: theme.palette.textcolor.light}} />
             </Grid>

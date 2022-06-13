@@ -95,8 +95,8 @@ export const BookDetailsViewPage = () => {
 
             console.log(res);
         }
+        navigate("/", {state: {value: 'Finished'}});
 
-        navigate("/");
     }
 
     return(

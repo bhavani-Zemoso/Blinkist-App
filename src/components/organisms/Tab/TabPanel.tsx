@@ -1,4 +1,4 @@
-import {TabContext, TabList, TabPanel} from '@mui/lab';
+import {TabContext, TabList} from '@mui/lab';
 import { Box, Tab, ThemeProvider, styled} from "@mui/material";
 import React, { useState } from "react";
 import {theme} from '../../../Themes/theme';
@@ -81,15 +81,11 @@ export const TabPanelComponent = (props: PropsType) => {
             <TabContext value={value}>
                 <Box sx={{borderBottom: 1, borderColor: 'divider'}}>
                     <StyledTabList data-testid = "tablist" aria-label="Tabs" onChange={handleChange} value={tabData && tabData[0].value} textColor='primary' indicatorColor='primary' >
-                        {/* <StyledTabRead label="Currently reading" value="Currently reading" wrapped={true}/>
-                        <StyledTabRead label="Finished" value="Finished" wrapped={true}/> */}
                         {
                             renderTabs()
                         }
                     </StyledTabList>
                 </Box>
-                {/* <TabPanel value="Currently reading">Currently reading</TabPanel>
-                <TabPanel value="Finished">Finished</TabPanel> */}
             </TabContext>
         </Box>
         </ThemeProvider>

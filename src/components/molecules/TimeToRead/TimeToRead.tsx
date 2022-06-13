@@ -12,7 +12,7 @@ type TimeToReadProps = {
 export const TimeToRead = (props: TimeToReadProps) => {
     const {text, style} = props;
     return(
-        <Grid container style={style}>
+        <Grid container style={style} data-testid='TimeToRead'>
             <Grid item>
                 <IconComponent url={timeIcon} style={{width: '16.67px', height: '16.67px', marginRight: theme.spacing(0), color: theme.palette.textcolor.light}} />
             </Grid>

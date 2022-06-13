@@ -1,9 +1,8 @@
-import { AppBar, ThemeProvider, Toolbar, Box, Stack, styled, Button, MenuItem, Menu} from "@mui/material"
+import { AppBar, ThemeProvider, Toolbar, Box, Stack, styled, Button, MenuItem, Menu, IconButton, Backdrop} from "@mui/material"
 import { theme } from "../../../Themes/theme"
 import { IconComponent } from "../../atoms/Icons/Icons"
 import { LogoComponent } from "../../atoms/Logo/Logo"
 import { TypographyComponent } from "../../atoms/Typography/Typography"
-import dropDown from '../../../assets/dropDown.png'
 import searchIcon from '../../../assets/searchIcon.png'
 import { AvatarComponent } from "../../atoms/Avatar/Avatar"
 import KeyboardArrowDownSharpIcon from '@mui/icons-material/KeyboardArrowDownSharp';
@@ -11,6 +10,9 @@ import KeyboardArrowUpSharpIcon from '@mui/icons-material/KeyboardArrowUpSharp';
 import React, { useState } from "react"
 import { ExtendedNav } from "../../molecules/ExtendedNav/ExtendedNav"
 import { NavLink } from "react-router-dom"
+import LoginButton from "../../Authentication/LoginButton/LoginButton"
+import LogoutButton from "../../Authentication/LogoutButton/LogoutButton"
+import { useAuth0 } from "@auth0/auth0-react"
 
 const logoStyle = {
     width: '124.09px',
@@ -46,10 +48,17 @@ interface HeaderProps {
 
 export const Header = (props: HeaderProps) => {
     
-    const [exploreStatus, setExploreStatus] = React.useState<boolean>(false);
-    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+    const [exploreStatus, setExploreStatus] = useState<boolean>(false);
+    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
-     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+
+    const [authStatus, setAuthStatus] = useState<boolean>(false);
+    const [anchorAuthEl, setAnchorAuthEl] = useState<null | HTMLElement>(null);
+    const openAuth = Boolean(anchorAuthEl);
+
+    const { isAuthenticated } = useAuth0();
+
+    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
     setExploreStatus(true);
   };
@@ -57,10 +66,22 @@ export const Header = (props: HeaderProps) => {
     setAnchorEl(null);
     setExploreStatus(false);
   };
+
+  const handleAuthClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorAuthEl(event.currentTarget);
+    setAuthStatus(true);
+  };
+
+  const handleAuthClose = () => {
+    setAnchorAuthEl(null);
+    setAuthStatus(false);
+  };
+
     return(
         <ThemeProvider theme={theme}>
+        
         <AppBar position= 'static' sx={{backgroundColor:'white', boxShadow: 'none'}}>
-            <Toolbar sx={{height: '86px',width: '1440px', marginLeft: '250px'}}>
+            <Toolbar sx={{height: '86px',width: '1440px', marginLeft: '245px'}}>
                 <Box sx={{display: 'flex', flexGrow: '1'}}>
                     <LogoComponent style={logoStyle}/>
                     <IconComponent url={searchIcon} style={iconStyle} />
@@ -79,38 +100,95 @@ export const Header = (props: HeaderProps) => {
                 </Box>
 
                 <AvatarComponent name={"BS"} />
-                <IconComponent url={dropDown} style={{width:'10.61px', height: '6.48px', marginLeft: theme.spacing(0),color: theme.palette.grey[500], marginRight: '530px'}} />
-                <Menu id="categories-menu"
-                anchorReference="anchorPosition"
-                anchorPosition={{top: 86, left: 250}}
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                PaperProps={{
-                    style: {
-                        height: '455px',
-                        outline: 'none',
-                        border: '0px',
-                        backgroundColor: theme.palette.backgroundcolor.main,
-                        boxShadow: 'none'
-                      
-                    },
-                  }}
-                MenuListProps={{
-                'aria-labelledby': 'categories-button',
-                }}
-                anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'center',
-                }}
-                transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'center'
-                }} data-testid="menu">
-                    <MenuItem onClick={handleClose}>
-                        <ExtendedNav />
-                    </MenuItem>  
-                </Menu>  
+                {/* <IconComponent url={dropDown} style={{width:'10.61px', height: '6.48px', marginLeft: theme.spacing(0),color: theme.palette.grey[500], marginRight: '530px'}} /> */}
+                <IconButton style={{width:'10.61px', height: '6.48px',color: theme.palette.grey[500], marginRight: '530px', marginLeft: theme.spacing(0)}}
+                    id="auth-button"
+                    aria-controls={openAuth ? 'auth-menu' : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={openAuth ? 'true' : undefined}
+                    onClick={handleAuthClick}
+                    data-testid="authButton">
+                    <KeyboardArrowDownSharpIcon />
+                </IconButton>
+                <Backdrop open={open} onClick={handleClose}  sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+                    <Menu id="categories-menu"
+                    anchorReference="anchorPosition"
+                    anchorPosition={{top: 86, left: 250}}
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    PaperProps={{
+                        style: {
+                            height: '455px',
+                            width: '100vw',
+                            outline: 'none',
+                            border: '0px',
+                            backgroundColor: theme.palette.backgroundcolor.main,
+                            boxShadow: 'none',
+                            margin: '0px',
+                            padding: '0px'
+                        
+                        },
+                    }}
+                    MenuListProps={{
+                    'aria-labelledby': 'categories-button',
+                    }}
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'center',
+                    }}
+                    transformOrigin={{
+                        vertical: 'top',
+                        horizontal: 'center'
+                    }} data-testid="menu">
+                        <MenuItem onClick={handleClose}>
+                            <ExtendedNav />
+                        </MenuItem>  
+                    </Menu>  
+                    </Backdrop>
+                
+                <Backdrop open={openAuth} onClick={handleAuthClose}  sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+                    <Menu 
+                    id="auth-menu"
+                    anchorEl={anchorAuthEl}
+                    open={openAuth}
+                    onClose={handleAuthClose}
+                    anchorReference="anchorPosition"
+                    anchorPosition={{top: 86, left: 1150}}
+                    PaperProps={{
+                        style: {
+                            height: '70px',
+                            outline: 'none',
+                            border: '0px',
+                            backgroundColor: theme.palette.backgroundcolor.main,
+                            boxShadow: 'none',
+                        },
+                    }}
+                    MenuListProps={{
+                    'aria-labelledby': 'auth-button',
+                    }}
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'center',
+                    }}
+                    transformOrigin={{
+                        vertical: 'top',
+                        horizontal: 'center'
+                    }} data-testid="auth-menu">
+                        {
+                            isAuthenticated 
+                            ?
+                            <MenuItem onClick={handleAuthClose}>
+                                <LogoutButton />
+                            </MenuItem>
+                            :
+                            <MenuItem onClick={handleAuthClose}>
+                                <LoginButton />
+                            </MenuItem>  
+                        }
+                        
+                    </Menu>
+                </Backdrop>
             </Toolbar>
         </AppBar>
        

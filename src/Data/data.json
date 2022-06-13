@@ -17,13 +17,13 @@
       "name": "Employee to Entrepreneur",
       "image": "https://i.ibb.co/Q6sC55w/11.png",
       "timeToRead": "15-minute read",
-      "readStatus": "Currently reading",
+      "readStatus": "Finished",
       "author": "Steve Glaveski",
       "NoOfReads": "",
       "category": [
         "Trending blinks"
       ],
-      "progress": 40
+      "progress": 100
     },
     {
       "id": 2,
@@ -70,13 +70,13 @@
       "name": "Lives of the Stoics",
       "image": "https://i.ibb.co/FmPxBsh/5.png",
       "timeToRead": "13-minute read",
-      "readStatus": "",
+      "readStatus": "Currently reading",
       "author": "Ryan Holiday. Stephen Hansel",
       "NoOfReads": "",
       "category": [
         "Trending blinks"
       ],
-      "progress": 0
+      "progress": 40
     },
     {
       "id": 6,

@@ -1,7 +1,8 @@
 
-import { TextField } from "@mui/material"
+import { IconButton, InputAdornment, TextField } from "@mui/material"
 import { styled } from "@mui/material"
 import { theme } from "../../../Themes/theme"
+import SearchIcon from '@mui/icons-material/Search';
 
 const StyledInput = styled(TextField)(() => ({
     width: '598px',
@@ -32,6 +33,9 @@ type placeholderProps = {
 
 export const InputBar = (props: placeholderProps) => {
     return(
-        <StyledInput id='standard-basic' variant='standard' placeholder={props.placeholder} style={props.style}/> 
+        <StyledInput id='standard-basic' variant='standard' placeholder={props.placeholder} style={props.style} 
+        InputProps={{
+          startAdornment: <InputAdornment position="start"><SearchIcon /></InputAdornment>,
+        }}/> 
     )
 }
