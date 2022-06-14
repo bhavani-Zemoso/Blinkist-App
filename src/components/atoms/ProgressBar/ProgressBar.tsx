@@ -1,4 +1,4 @@
-import { Box, Grid, LinearProgress} from "@mui/material"
+import { Box, LinearProgress} from "@mui/material"
 
 const barStyle = {
     backgroundColor: '#F1F6F4',

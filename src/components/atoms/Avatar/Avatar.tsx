@@ -1,5 +1,4 @@
-import { Stack } from "@mui/material";
-import { Avatar } from "@mui/material";
+import { Stack, Avatar } from "@mui/material";
 
 type AvatarProps = {
     name: string
