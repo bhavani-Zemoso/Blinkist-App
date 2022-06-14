@@ -80,6 +80,7 @@
     "babel-jest": "^28.1.1",
     "babel-loader": "^8.2.5",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "jest": "^28.1.1",
     "jest-sonar-reporter": "^2.0.0",
     "prop-types": "^15.8.1",
     "react-hot-loader": "^4.13.0",
