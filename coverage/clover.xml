@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655213270877" clover="3.2.0">
-  <project timestamp="1655213270877" name="All files">
-    <metrics statements="282" coveredstatements="110" conditionals="58" coveredconditionals="19" methods="104" coveredmethods="34" elements="444" coveredelements="163" complexity="0" loc="282" ncloc="282" packages="26" files="49" classes="49"/>
+<coverage generated="1655219895469" clover="3.2.0">
+  <project timestamp="1655219895469" name="All files">
+    <metrics statements="283" coveredstatements="119" conditionals="60" coveredconditionals="20" methods="104" coveredmethods="34" elements="447" coveredelements="173" complexity="0" loc="283" ncloc="283" packages="26" files="49" classes="49"/>
     <package name="src">
       <metrics statements="13" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="App.tsx" path="/home/bhavS/Blinkist App/blinkist/src/App.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
       </file>
       <file name="index.tsx" path="/home/bhavS/Blinkist App/blinkist/src/index.tsx">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -47,21 +47,22 @@
       <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="LogoutButton.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/Authentication/LogoutButton/LogoutButton.tsx">
         <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.atoms.Avatar">
-      <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
       <file name="Avatar.stories.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/Avatar/Avatar.stories.tsx">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="12" count="0" type="stmt"/>
       </file>
       <file name="Avatar.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/Avatar/Avatar.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.components.atoms.Icons">
@@ -84,7 +85,7 @@
       </file>
       <file name="Image.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/Images/Image.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
       </file>
     </package>
@@ -98,8 +99,8 @@
       </file>
       <file name="Input.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/atoms/Input/Input.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
       </file>
     </package>
@@ -152,7 +153,7 @@
       </file>
       <file name="Banner.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/molecules/Banner/Banner.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="9" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
       </file>
@@ -205,9 +206,9 @@
       </file>
       <file name="SearchBar.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/molecules/SearchBar/SearchBar.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
       </file>
     </package>
@@ -280,40 +281,40 @@
       </file>
     </package>
     <package name="src.components.organisms.Header">
-      <metrics statements="28" coveredstatements="20" conditionals="12" coveredconditionals="9" methods="9" coveredmethods="4"/>
+      <metrics statements="28" coveredstatements="20" conditionals="14" coveredconditionals="10" methods="9" coveredmethods="4"/>
       <file name="Header.stories.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/organisms/Header/Header.stories.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="11" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
       <file name="Header.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/organisms/Header/Header.tsx">
-        <metrics statements="26" coveredstatements="20" conditionals="12" coveredconditionals="9" methods="7" coveredmethods="4"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="31" count="2" type="stmt"/>
-        <line num="49" count="2" type="stmt"/>
-        <line num="51" count="4" type="stmt"/>
-        <line num="52" count="3" type="stmt"/>
+        <metrics statements="26" coveredstatements="20" conditionals="14" coveredconditionals="10" methods="7" coveredmethods="4"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
         <line num="53" count="3" type="stmt"/>
-        <line num="55" count="3" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
         <line num="56" count="3" type="stmt"/>
         <line num="57" count="3" type="stmt"/>
-        <line num="59" count="3" type="stmt"/>
-        <line num="61" count="3" type="stmt"/>
-        <line num="62" count="1" type="stmt"/>
+        <line num="58" count="3" type="stmt"/>
+        <line num="60" count="3" type="stmt"/>
+        <line num="62" count="3" type="stmt"/>
         <line num="63" count="1" type="stmt"/>
-        <line num="65" count="3" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="66" count="3" type="stmt"/>
         <line num="67" count="0" type="stmt"/>
-        <line num="70" count="3" type="stmt"/>
-        <line num="71" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="71" count="3" type="stmt"/>
         <line num="72" count="0" type="stmt"/>
-        <line num="75" count="3" type="stmt"/>
-        <line num="76" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="76" count="3" type="stmt"/>
         <line num="77" count="0" type="stmt"/>
-        <line num="80" count="3" type="stmt"/>
-        <line num="113" count="4" type="stmt"/>
-        <line num="150" count="3" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="81" count="3" type="stmt"/>
+        <line num="126" count="4" type="stmt"/>
+        <line num="163" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.components.organisms.Tab">
@@ -357,67 +358,67 @@
       </file>
     </package>
     <package name="src.components.pages.BookDetailsViewPage">
-      <metrics statements="33" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="0"/>
+      <metrics statements="33" coveredstatements="7" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="0"/>
       <file name="BookDetailsViewPage.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/pages/BookDetailsViewPage/BookDetailsViewPage.tsx">
-        <metrics statements="33" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
+        <metrics statements="33" coveredstatements="7" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
         <line num="57" count="0" type="stmt"/>
         <line num="58" count="0" type="stmt"/>
         <line num="59" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
         <line num="68" count="0" type="stmt"/>
         <line num="69" count="0" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
-        <line num="71" count="0" type="stmt"/>
-        <line num="74" count="0" type="stmt"/>
-        <line num="76" count="0" type="stmt"/>
-        <line num="77" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="76" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="78" count="0" type="stmt"/>
         <line num="79" count="0" type="stmt"/>
         <line num="80" count="0" type="stmt"/>
-        <line num="81" count="0" type="stmt"/>
-        <line num="83" count="0" type="stmt"/>
-        <line num="86" count="0" type="stmt"/>
-        <line num="89" count="0" type="stmt"/>
-        <line num="90" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="89" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="91" count="0" type="stmt"/>
         <line num="92" count="0" type="stmt"/>
         <line num="93" count="0" type="stmt"/>
-        <line num="94" count="0" type="stmt"/>
-        <line num="96" count="0" type="stmt"/>
-        <line num="98" count="0" type="stmt"/>
-        <line num="102" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.pages.EntrepreneurshipPage">
-      <metrics statements="19" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="10" coveredmethods="0"/>
+      <metrics statements="19" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="10" coveredmethods="0"/>
       <file name="EntrepreneurshipPage.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/pages/EntrepreneurshipPage/EntrepreneurshipPage.tsx">
-        <metrics statements="19" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="10" coveredmethods="0"/>
-        <line num="13" count="0" type="stmt"/>
+        <metrics statements="19" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="44" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="64" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="80" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="62" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.pages.MyLibrary">
@@ -452,8 +453,8 @@
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Layout.tsx" path="/home/bhavS/Blinkist App/blinkist/src/components/templates/Layout.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.stories">

@@ -3,7 +3,7 @@ import { AvatarComponent } from './Avatar'
 
 test('renders Avatar' , () => {
     render(
-        <AvatarComponent name='BS' />
+        <AvatarComponent>BS</AvatarComponent>
     );
     const linkElement = screen.getByTestId("Avatar");
     expect(linkElement).toBeInTheDocument();

@@ -6,16 +6,13 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { MyLibrary } from './components/pages/MyLibrary/MyLibrary';
 import { Layout } from './components/templates/Layout';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
     <div className="App" style={{margin: 'auto'}} data-testid="App">
       <ThemeProvider theme={theme}>
-        <Layout>
-          <Box>
-            <MyLibrary />
-          </Box> 
-        </Layout>
+          <Layout /> 
       </ThemeProvider>  
     </div>
   );

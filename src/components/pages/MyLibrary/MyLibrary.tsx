@@ -88,7 +88,7 @@ const TabPanelStyle = {
 
      return(
         <Box sx={{margin: theme.spacing(1)}}>
-            <Header />
+            {/* <Header /> */}
             <TypographyComponent variant={"h1"} style={typographyStyle} text={"My Library"} />
             <TabPanelComponent style={TabPanelStyle} stateHandler={handleState} tabData={tabData}/>
 {/*             {
@@ -103,7 +103,7 @@ const TabPanelStyle = {
                 }
                 
             </Grid>
-            <Footer />
+            {/* <Footer /> */}
         </Box>
      )
      

@@ -13,6 +13,7 @@ import { NavLink } from "react-router-dom"
 import LoginButton from "../../Authentication/LoginButton/LoginButton"
 import LogoutButton from "../../Authentication/LogoutButton/LogoutButton"
 import { useAuth0 } from "@auth0/auth0-react"
+import PersonIcon from '@mui/icons-material/Person';
 
 const logoStyle = {
     width: '124.09px',
@@ -99,7 +100,19 @@ export const Header = (props: HeaderProps) => {
                     </NavLink>
                 </Box>
 
-                <AvatarComponent name={"BS"} />
+                {
+                    isAuthenticated
+                    ?
+                    <AvatarComponent>
+                        BS
+                    </AvatarComponent>
+                    :
+                    <AvatarComponent>
+                        <PersonIcon />
+                    </AvatarComponent>
+                }
+
+                
                 {/* <IconComponent url={dropDown} style={{width:'10.61px', height: '6.48px', marginLeft: theme.spacing(0),color: theme.palette.grey[500], marginRight: '530px'}} /> */}
                 <IconButton style={{width:'10.61px', height: '6.48px',color: theme.palette.grey[500], marginRight: '530px', marginLeft: theme.spacing(0)}}
                     id="auth-button"

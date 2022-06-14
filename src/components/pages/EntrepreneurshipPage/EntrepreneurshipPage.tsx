@@ -6,8 +6,6 @@ import { TypographyComponent } from "../../atoms/Typography/Typography"
 import { Banner } from "../../molecules/Banner/Banner"
 import { SearchBar } from "../../molecules/SearchBar/SearchBar"
 import { CardComponent } from "../../organisms/Card/Card"
-import { Footer } from "../../organisms/Footer/Footer"
-import { Header } from "../../organisms/Header/Header"
 
 
 export const EntepreneurshipPage = () => {
@@ -79,7 +77,6 @@ export const EntepreneurshipPage = () => {
 
     return(
         <Box>
-            <Header />
             <Banner url={'https://i.ibb.co/XFZtZP3/exploreposter.png'}/>
             <SearchBar />
             <TypographyComponent variant="body1" style={{fontSize: '24px', lineHeight: '30px', width:'174px', color: theme.palette.textcolor.main, marginTop: '80px', marginLeft: '255px'}} text="Trending blinks" />
@@ -100,7 +97,6 @@ export const EntepreneurshipPage = () => {
                     featured()
                 }
             </Grid>
-            <Footer />
         </Box>
         
     )

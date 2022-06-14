@@ -9,4 +9,4 @@ export default {
     component: Avatar
 }
 
-export const Primary = () => <AvatarComponent name='BS'></AvatarComponent>
+export const Primary = () => <AvatarComponent>BS</AvatarComponent>

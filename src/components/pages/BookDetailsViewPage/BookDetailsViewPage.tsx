@@ -9,7 +9,6 @@ import ArrowForwardSharpIcon from '@mui/icons-material/ArrowForwardSharp';
 import { ImageComponent } from "../../atoms/Images/Image"
 import { useNavigate } from "react-router-dom";
 import { TabPanelComponent } from "../../organisms/Tab/TabPanel"
-import { Footer } from "../../organisms/Footer/Footer"
 const axios = require('axios');
 
 const StyledReadButton =  styled(Button)({
@@ -101,7 +100,6 @@ export const BookDetailsViewPage = () => {
 
     return(
         <Box>
-        <Header />
         <Box sx={{marginLeft: '264px', width: '1000px', marginBottom: '177px'}}>
             <Grid container columnSpacing={theme.spacing(7)}>
                 <Grid item>
@@ -137,8 +135,6 @@ export const BookDetailsViewPage = () => {
                 <TypographyComponent style={{width: '600px', height: '100px', lineHeight: '20px', color: theme.palette.textcolor.main, marginTop: '20px'}} text={text} variant="body2" />
             </Container>
         </Box>
-
-        <Footer />
         
         </Box>
     )

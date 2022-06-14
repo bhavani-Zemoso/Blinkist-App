@@ -17,9 +17,8 @@ root.render(
       domain="dev-8jqgrb-t.us.auth0.com"
       clientId="9qCpxtxNQvzxFDul1jtqgr0tP6GehsIv"
       redirectUri={window.location.origin}>
-      <BrowserRouter>
-        <Routes>
-        {/*  <App /> */}
+       <BrowserRouter>
+        {/*<Routes>
           <Route path="/" element={<App />} />
           <Route path="/EntrepreneurshipPage" element={<EntepreneurshipPage />} />
           <Route
@@ -33,8 +32,9 @@ root.render(
           <Route path="/BookDetailsViewPage/:bookId" element={<BookDetailsViewPage />} />
           <Route path="/extendedNav" element={<ExtendedNav />} />
           <Route path="/:value" element={<App />} />
-        </Routes>
-      </BrowserRouter>
+        </Routes>*/}
+        <App />
+      </BrowserRouter> 
     </Auth0Provider>
   </React.StrictMode>
 );
